@@ -1,4 +1,4 @@
-<a routerLink="/administracion/crear-producto" class="btn">Buscar producto</a>
+<a routerLink="/administracion/crear-producto" class="btn"> Crear Producto</a>
 <table class="table responsive">
     <thead>
         <tr>
@@ -14,6 +14,10 @@
             <th>
                 Editar
             </th>
+            <th>
+                Eliminar
+            </th>
+            
         </tr>
     </thead>
     <tbody>
@@ -27,9 +31,12 @@
             <td>
             <img src="{{p.imagen}}" class="imagenProducto" >
             </td>
-
+           
             <td>
                 <a routerLink="/administracion/editar-producto/{{p.id}}" class="btn"> Editar Producto </a>
+            </td>
+            <td>
+                <a routerLink="/administracion/eliminar-producto/{{p.id}}" class="btn"> Eliminar Producto </a>
             </td>
         </tr>
     </tbody>
